@@ -8,8 +8,10 @@ from kneed import KneeLocator
 # ========================================================
 # task1
 print('Task1')
+
 # Read the data from the csv file
 stock_data = pd.read_csv('stock_data.csv')
+
 # Name: The stock name
 stock_data.rename(columns={'date': 'Date'}, inplace=True)
 stock_data.rename(columns={'open': 'Open'}, inplace=True)
