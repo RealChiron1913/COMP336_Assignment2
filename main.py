@@ -120,6 +120,8 @@ kneedle = KneeLocator(range(1, 21), explained_variance_ratios[:20], curve='conve
 plt.axvline(x=kneedle.knee, color='r', linestyle='--', label='Elbow')
 plt.legend()
 plt.show()
+# percentage of variance is explained by the first principal component
+print('percentage of variance is explained by the first principal component: {}'.format(explained_variance_ratios[0]))
 # ========================================================
 
 
