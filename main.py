@@ -170,6 +170,8 @@ kneedle_normalized = KneeLocator(range(1, 21), explained_variance_ratios_normali
 plt.axvline(x=kneedle_normalized.knee, color='r', linestyle='--', label='Elbow')
 plt.legend()
 plt.show()
+# percentage of variance is explained by the first principal component
+print('percentage of variance is explained by the first principal component: {}'.format(explained_variance_ratios_normalized[0]))
 # Calculate cumulative variance ratios
 cumulative_variance_ratios_normalized = np.cumsum(explained_variance_ratios_normalized)
 
