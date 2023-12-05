@@ -143,6 +143,8 @@ print("Top 5 Principal Components (Ranked by Eigenvalue):")
 for i in range(5):
     index = sorted_indices[i]
     print(f"PC {i + 1}: Eigenvalue = {eigenvalues[index]}")
+    # print PC
+    print(pca.components_[index])
 # ========================================================
 
 
@@ -222,6 +224,8 @@ eigenvalues_normalized = pca_normalized.explained_variance_
 print("Top 5 Principal Components (Ranked by Eigenvalue):")
 for i in range(5):
     print(f"PC {i+1}: Eigenvalue = {eigenvalues_normalized[i]}")
+    # print PC
+    print(pca_normalized.components_[i])
 
 # Get the explained variance ratios from the PCA object
 explained_variance_ratios_normalized = pca_normalized.explained_variance_ratio_
